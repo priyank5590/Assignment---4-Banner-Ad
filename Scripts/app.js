@@ -66,6 +66,28 @@
         stage.update();
     }
 
+    function main() {
+        button = new createjs.Bitmap('../Assets/images/button.png');
+        
+        button.regX = button.getBounds().width * 0.5;
+        button.regY = button.getBounds().height * 0.5;
+        button.scaleX = 0.5;
+        button.scaleY = 0.5;
+        button.x = screenWidth * 0.5;
+        button.y = screenHeight * 0.8;
+        stage.addChild(button);
+
+        nameLabel = new createjs.Text("Web Portfolio", "30px Consolas", "#fff");
+
+        nameLabel.regX = nameLabel.getMeasuredWidth() * 0.5;
+        nameLabel.regY = nameLabel.getMeasuredWidth() * 0.5;
+        nameLabel.x = screenWidth * 0.5;
+        nameLabel.y = screenHeight * 0.5;
+        stage.addChild(nameLabel);
+    }
+
+    window.onload = init;
+
 
 })();
 
