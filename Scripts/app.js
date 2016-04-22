@@ -19,7 +19,6 @@
     var nameLabelMove = 1;
     
     var nameTitle = null;
-    var nameTitleMove = 1;
 
     var button = null;
     var buttonIsGrowing = true;
@@ -88,9 +87,7 @@
         stage.addChild(nameLabel);
         
         
-        nameTitle = new createjs.Text("By Priyank Vyas", "22px Consolas", "#fff");
-        nameTitle.regX = nameTitle.getMeasuredWidth() * 0.5;
-        nameTitle.regY = nameTitle.getMeasuredWidth() * 0.5;
+        nameTitle = new createjs.Text("By Priyank Vyas", "22px Consolas", "#7750f8");
         nameTitle.x = screenWidth * 0.5;
         nameTitle.y = screenHeight * 0.8;
         stage.addChild(nameTitle);
