@@ -88,6 +88,8 @@
         
         
         nameTitle = new createjs.Text("By Priyank Vyas", "22px Consolas", "#7750f8");
+        nameTitle.regX = nameTitle.getMeasuredWidth() * 0.5;
+        nameTitle.regY = nameTitle.getMeasuredWidth() * 0.5;
         nameTitle.x = screenWidth * 0.5;
         nameTitle.y = screenHeight * 0.8;
         stage.addChild(nameTitle);
