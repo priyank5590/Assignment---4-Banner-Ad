@@ -17,6 +17,9 @@
 
     var nameLabel = null;
     var nameLabelMove = 1;
+    
+    var nameTitle = null;
+    var nameTitleMove = 1;
 
     var button = null;
     var buttonIsGrowing = true;
@@ -77,16 +80,20 @@
         button.y = screenHeight * 0.8;
         stage.addChild(button);
 
-        nameLabel = new createjs.Text("", "30px Consolas", "#fff");
-        
-        nameLabel.Text = "Web Portfolio \n\n";
-        nameLabel.Text += " By Priyank Vyas";
-
+        nameLabel = new createjs.Text("Web Portfolio", "30px Consolas", "#fff");
         nameLabel.regX = nameLabel.getMeasuredWidth() * 0.5;
         nameLabel.regY = nameLabel.getMeasuredWidth() * 0.5;
         nameLabel.x = screenWidth * 0.5;
-        nameLabel.y = screenHeight * 0.7;
+        nameLabel.y = screenHeight * 0.4;
         stage.addChild(nameLabel);
+        
+        
+        nameTitle = new createjs.Text("By Priyank Vyas", "22px Consolas", "#fff");
+        nameTitle.regX = nameTitle.getMeasuredWidth() * 0.5;
+        nameTitle.regY = nameTitle.getMeasuredWidth() * 0.5;
+        nameTitle.x = screenWidth * 0.5;
+        nameTitle.y = screenHeight * 0.6;
+        stage.addChild(nameTitle);
     }
     
     window.onload = init;
