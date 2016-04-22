@@ -80,7 +80,7 @@
         nameLabel = new createjs.Text("", "30px Consolas", "#fff");
         
         nameLabel.Text = "Web Portfolio \n\n";
-        nameLabel.Text += " By Priyank Vyas\";
+        nameLabel.Text += " By Priyank Vyas";
 
         nameLabel.regX = nameLabel.getMeasuredWidth() * 0.5;
         nameLabel.regY = nameLabel.getMeasuredWidth() * 0.5;
