@@ -82,7 +82,7 @@
         nameLabel.regX = nameLabel.getMeasuredWidth() * 0.5;
         nameLabel.regY = nameLabel.getMeasuredWidth() * 0.5;
         nameLabel.x = screenWidth * 0.5;
-        nameLabel.y = screenHeight * 0.5;
+        nameLabel.y = screenHeight * 0.7;
         stage.addChild(nameLabel);
     }
 
