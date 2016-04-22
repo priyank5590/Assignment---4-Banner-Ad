@@ -86,11 +86,6 @@
         stage.addChild(nameLabel);
     }
     
-     button.on('mouseover', function() {
-            button.scaleX =1.0;
-        })
-
-
     window.onload = init;
 
 
